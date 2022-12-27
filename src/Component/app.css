@@ -1,0 +1,13 @@
+.container{
+    width: 80vw;
+    height: 100vh;
+  
+    padding: 20px;
+
+ 
+
+}
+.todo{
+    border: 2px solid black;
+    padding: 3px;
+}
