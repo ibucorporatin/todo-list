@@ -23,16 +23,16 @@ const Item = ({list}) => {
      }
 
   return (
-   <div style={{display:"flex",alignItem:"center"}} >
+   
      <li className="list" >
-      <span>
-        <span><input type="checkbox" onClick={()=>isDoneFunction(list)} /></span> <span  className="listItem"  style={{ textDecoration:list.isDone?"line-through":""  }} >{list.name}</span>
+      <span style={{display:"flex"}} >
+        <span><input type="checkbox" onClick={()=>isDoneFunction(list)} /></span> <div className={`listItem ${list.isDone?"done":""}`}  >{list.name}</div>
         </span>
          <span className="buttonContainer" > 
          <span><button className="button" onClick={()=>(deletelist(list))} >Delete</button><button className="button" onClick={()=>(editlist(list))}>Edit</button>
          </span>
         </span></li>
-   </div>
+  
   )
 }
 

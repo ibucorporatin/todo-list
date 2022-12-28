@@ -79,8 +79,8 @@ hr{
     margin: 0%;
 }
 .list{
-    height: 40px;
-    width: 100%;
+    min-height: 40px;
+    width: 95%;
     margin: 20px 0px 0px 0px;
     font-size: 20px;
     border: 1px solid rgba(125, 114, 114, 0.477);
@@ -92,12 +92,40 @@ hr{
     border-radius: 3px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+  
 }
 .listItem{
   
     margin: 0px 0px 0px 15px;
-   
+   width: 200px;
+   overflow: auto;
 }
 .buttonContainer{
     margin: 0px 40px 0px 5px;
 }
+.done{
+    text-decoration: line-through;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+   
+        width: 90vw;
+        min-height: 80vh;
+    }
+    .input{
+        height: 30px;
+        width: 50vw;    
+        font-size: 20px;
+     
+    }
+    .button{
+        padding: 1px;
+     
+    }
+    .listItem{
+  
+       font-size: 20px;
+       width: 100px;
+       
+    }
+  }
