@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <h1>todo-list</h1>
+    <h1 className='title' >To Do List</h1>
   )
 }
 
